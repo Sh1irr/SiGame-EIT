@@ -1,0 +1,44 @@
+.titleGroup {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0;
+}
+
+.arcWrap {
+  width: min(90vw, 900px);
+}
+
+.arcSvg {
+  width: 100%;
+  height: auto;
+  display: block;
+  fill: var(--color-accent);
+  font-family: var(--font-heading);
+  font-weight: 700;
+}
+
+.subtitle {
+  font-size: clamp(1.1rem, 2.4vw, 1.6rem);
+  font-weight: 700;
+  color: var(--color-text-muted);
+  margin: 0;
+}
+
+.logo {
+  max-width: 160px;
+  max-height: 160px;
+  object-fit: contain;
+  margin-top: 10px;
+}
+
+.startButton {
+  font-family: var(--font-heading);
+  font-size: clamp(1.1rem, 2vw, 1.5rem);
+  padding: clamp(14px, 2.2vw, 20px) clamp(36px, 6vw, 64px);
+  border-radius: 16px;
+  border: 2px solid var(--color-accent);
+  background: var(--color-accent);
+  color: var(--color-accent-contrast);
+  cursor: pointer;
+}

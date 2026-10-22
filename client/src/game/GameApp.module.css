@@ -1,0 +1,19 @@
+.pickerWrap {
+  position: relative;
+}
+
+.homeButtonWrap {
+  position: absolute;
+  top: clamp(12px, 2vh, 24px);
+  left: clamp(12px, 2vw, 24px);
+  z-index: 10;
+}
+
+.homeButton {
+  padding: 8px 16px;
+  border-radius: 8px;
+  border: 1px solid var(--color-border);
+  background: var(--color-bg-elevated);
+  color: var(--color-text);
+  cursor: pointer;
+}

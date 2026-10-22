@@ -1,0 +1,88 @@
+.screen {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: clamp(16px, 3vh, 32px);
+  padding: clamp(16px, 4vh, 48px);
+  text-align: center;
+}
+
+.topBar {
+  position: absolute;
+  top: clamp(12px, 2vh, 24px);
+  right: clamp(12px, 2vw, 24px);
+  display: flex;
+  gap: 8px;
+}
+
+.iconButton {
+  width: 44px;
+  height: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 1px solid var(--color-border);
+  background: var(--color-bg-elevated);
+  color: var(--color-text);
+  font-size: 20px;
+  cursor: pointer;
+  transition: border-color 150ms ease, transform 150ms ease;
+}
+
+.iconButton:hover {
+  border-color: var(--color-accent);
+}
+
+.iconButton:active {
+  transform: scale(0.95);
+}
+
+.mascot {
+  width: clamp(110px, 15vw, 190px);
+  height: clamp(110px, 15vw, 190px);
+  object-fit: contain;
+}
+
+.title {
+  font-size: clamp(2.5rem, 7vw, 4.5rem);
+  letter-spacing: -0.02em;
+  color: var(--color-accent);
+}
+
+.actions {
+  display: flex;
+  gap: clamp(16px, 3vw, 32px);
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.actionButton {
+  font-family: var(--font-heading);
+  font-size: clamp(1.1rem, 2vw, 1.5rem);
+  padding: clamp(16px, 2.5vw, 24px) clamp(32px, 6vw, 56px);
+  border-radius: 16px;
+  border: 2px solid var(--color-accent);
+  background: var(--color-accent);
+  color: var(--color-accent-contrast);
+  cursor: pointer;
+  transition: transform 150ms ease, box-shadow 150ms ease;
+}
+
+.actionButton:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px var(--color-shadow);
+}
+
+.actionButton:active {
+  transform: translateY(0);
+}
+
+.actionButtonSecondary {
+  background: transparent;
+  color: var(--color-text);
+}
+

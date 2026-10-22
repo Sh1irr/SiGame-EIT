@@ -1,0 +1,81 @@
+.title {
+  font-family: var(--font-heading);
+  font-size: clamp(1.8rem, 4vw, 2.8rem);
+  color: var(--color-accent);
+  animation: fadeIn 400ms ease-out;
+}
+
+.table {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: min(520px, 92vw);
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 14px 20px;
+  border-radius: 12px;
+  border: 1px solid var(--color-border);
+  background: var(--color-bg-elevated);
+  opacity: 0;
+  animation: rowIn 400ms ease-out forwards;
+  animation-delay: var(--row-delay, 0ms);
+}
+
+.rowFirst {
+  border-color: var(--color-accent);
+  box-shadow: 0 0 0 2px var(--color-accent);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes rowIn {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.rank {
+  font-family: var(--font-heading);
+  font-size: 1.4rem;
+  color: var(--color-accent);
+  width: 2.2em;
+  text-align: center;
+}
+
+.name {
+  flex: 1;
+  text-align: left;
+  font-size: 1.1rem;
+}
+
+.score {
+  font-family: var(--font-heading);
+  font-size: 1.3rem;
+}
+
+.finishButton {
+  font-family: var(--font-heading);
+  font-size: clamp(1.05rem, 2vw, 1.3rem);
+  padding: 14px 32px;
+  border-radius: 14px;
+  border: 2px solid var(--color-accent);
+  background: var(--color-accent);
+  color: var(--color-accent-contrast);
+  cursor: pointer;
+}

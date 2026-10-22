@@ -1,0 +1,67 @@
+.title {
+  font-size: clamp(1.8rem, 4vw, 2.6rem);
+  color: var(--color-accent);
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: min(480px, 90vw);
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.input {
+  flex: 1;
+  padding: 10px 14px;
+  border-radius: 10px;
+  border: 1px solid var(--color-border);
+  background: var(--color-bg-elevated);
+  color: var(--color-text);
+  font-size: 1.05rem;
+}
+
+.iconButton {
+  width: 38px;
+  height: 38px;
+  border-radius: 8px;
+  border: 1px solid var(--color-border);
+  background: var(--color-bg-elevated);
+  color: var(--color-text);
+  cursor: pointer;
+}
+
+.addButton {
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px dashed var(--color-border);
+  background: transparent;
+  color: var(--color-text);
+  cursor: pointer;
+}
+
+.error {
+  color: #e07a6b;
+  font-size: 0.9rem;
+}
+
+.startButton {
+  font-family: var(--font-heading);
+  font-size: clamp(1.1rem, 2vw, 1.5rem);
+  padding: clamp(14px, 2.2vw, 20px) clamp(36px, 6vw, 64px);
+  border-radius: 16px;
+  border: 2px solid var(--color-accent);
+  background: var(--color-accent);
+  color: var(--color-accent-contrast);
+  cursor: pointer;
+}
+
+.startButton:disabled {
+  opacity: 0.5;
+  cursor: default;
+}

@@ -1,0 +1,105 @@
+.screen {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  color: var(--color-text);
+  font-family: var(--font-body);
+  padding: clamp(12px, 2vh, 28px);
+  gap: clamp(10px, 2vh, 20px);
+  position: relative;
+}
+
+.topBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.roundName {
+  font-family: var(--font-heading);
+  font-size: clamp(1.3rem, 2.6vw, 2rem);
+  color: var(--color-text);
+}
+
+.topBarActions {
+  display: flex;
+  gap: 10px;
+}
+
+.hideScoreButton {
+  padding: 10px 16px;
+  border-radius: 10px;
+  border: 1px solid var(--color-border);
+  background: var(--color-bg-elevated);
+  color: var(--color-text);
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.nextRoundButton {
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: 2px solid var(--color-accent);
+  background: var(--color-accent);
+  color: var(--color-accent-contrast);
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.grid {
+  flex: 1;
+  display: grid;
+  gap: 2px;
+  background: var(--color-line);
+  border: 1px solid var(--color-line);
+}
+
+.categoryCell {
+  background: var(--color-bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+  font-family: var(--font-heading);
+  font-size: clamp(0.9rem, 1.6vw, 1.3rem);
+  text-align: center;
+}
+
+.slotButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-bg);
+  border: none;
+  color: var(--color-accent);
+  font-family: var(--font-heading);
+  font-size: clamp(1.4rem, 3.2vw, 2.4rem);
+  cursor: pointer;
+  transition: opacity 300ms ease, color 300ms ease;
+}
+
+.slotButton:hover {
+  background: var(--color-bg-elevated);
+}
+
+.slotPlayed {
+  color: var(--color-text-muted);
+  opacity: 0.35;
+  cursor: default;
+}
+
+.slotEmpty {
+  color: var(--color-text-muted);
+  opacity: 0.35;
+  cursor: default;
+}
+
+.mascot {
+  position: absolute;
+  bottom: clamp(8px, 1.5vh, 16px);
+  left: clamp(8px, 1.5vw, 16px);
+  width: clamp(70px, 9vw, 120px);
+  height: clamp(70px, 9vw, 120px);
+  object-fit: contain;
+  pointer-events: none;
+}

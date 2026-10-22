@@ -1,0 +1,16 @@
+/* Admin is intentionally neutral/light regardless of the game's dark/light theme. */
+.adminRoot {
+  --admin-bg: #faf7f0;
+  --admin-surface: #ffffff;
+  --admin-text: #27221a;
+  --admin-text-muted: #6b5e4a;
+  --admin-border: #e3dac5;
+  --admin-accent: #d6a515;
+  --admin-accent-contrast: #2a1c10;
+  --admin-danger: #c0392b;
+
+  min-height: 100vh;
+  background: var(--admin-bg);
+  color: var(--admin-text);
+  font-family: var(--font-body);
+}

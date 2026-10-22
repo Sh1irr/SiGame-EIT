@@ -1,0 +1,33 @@
+.skipButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: inherit;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  animation: introIn 400ms ease-out;
+}
+
+@keyframes introIn {
+  from {
+    opacity: 0;
+    transform: scale(0.92);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.label {
+  font-size: clamp(1.1rem, 2.4vw, 1.5rem);
+  color: var(--color-text-muted);
+}
+
+.name {
+  font-family: var(--font-heading);
+  font-size: clamp(2.2rem, 6vw, 4rem);
+  color: var(--color-accent);
+}

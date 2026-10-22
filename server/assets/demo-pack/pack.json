@@ -1,0 +1,148 @@
+{
+  "id": "demo",
+  "title": "Демо-пак",
+  "subtitle": "від",
+  "status": "ready",
+  "createdAt": "2026-01-01T00:00:00.000Z",
+  "updatedAt": "2026-01-01T00:00:00.000Z",
+  "rounds": [
+    {
+      "id": "demo-r1",
+      "name": "Раунд 1",
+      "prices": [100, 200, 300, 400, 500],
+      "categories": [
+        {
+          "id": "demo-r1-c1",
+          "name": "Текст і картинки",
+          "slots": [
+            {
+              "id": "demo-r1-c1-100",
+              "content": [{ "id": "b1", "type": "text", "text": "Яка найбільша планета Сонячної системи?" }],
+              "options": [],
+              "answer": [{ "id": "b2", "type": "text", "text": "Юпітер." }]
+            },
+            {
+              "id": "demo-r1-c1-200",
+              "content": [
+                { "id": "b3", "type": "image", "file": "demo-image.png", "caption": "Що зображено?" }
+              ],
+              "options": [],
+              "answer": [
+                { "id": "b4", "type": "text", "text": "Це тестова заглушка — у готовому паку тут буде реальна картинка." }
+              ]
+            },
+            null,
+            {
+              "id": "demo-r1-c1-400",
+              "content": [
+                { "id": "b5", "type": "text", "text": "Яка з цих мов програмування з'явилася найраніше?" }
+              ],
+              "options": [
+                { "id": "o1", "label": "A", "text": "Python" },
+                { "id": "o2", "label": "B", "text": "Fortran" },
+                { "id": "o3", "label": "C", "text": "JavaScript" },
+                { "id": "o4", "label": "D", "text": "Java" }
+              ],
+              "correctOptionId": "o2",
+              "answer": [{ "id": "b6", "type": "text", "text": "Fortran — 1957 рік." }]
+            },
+            {
+              "id": "demo-r1-c1-500",
+              "content": [{ "id": "b7", "type": "audio", "file": "demo-audio.wav" }],
+              "options": [],
+              "answer": [{ "id": "b8", "type": "text", "text": "Чистий тон 440 Гц — нота Ля." }]
+            }
+          ]
+        },
+        {
+          "id": "demo-r1-c2",
+          "name": "Аудіо-відео",
+          "slots": [
+            {
+              "id": "demo-r1-c2-100",
+              "content": [{ "id": "b9", "type": "video", "file": "demo-video.mp4" }],
+              "options": [],
+              "answer": [{ "id": "b10", "type": "text", "text": "Тестове відео-заглушка." }]
+            },
+            {
+              "id": "demo-r1-c2-200",
+              "content": [{ "id": "b11", "type": "text", "text": "Скільки кісток у тілі дорослої людини?" }],
+              "options": [],
+              "answer": [{ "id": "b12", "type": "text", "text": "206." }]
+            },
+            {
+              "id": "demo-r1-c2-300",
+              "content": [{ "id": "b13", "type": "text", "text": "Яка річка вважається найдовшою у світі?" }],
+              "options": [],
+              "answer": [{ "id": "b14", "type": "text", "text": "Ніл або Амазонка — залежно від методики вимірювання." }]
+            },
+            {
+              "id": "demo-r1-c2-400",
+              "content": [{ "id": "b15", "type": "text", "text": "У якому році людина вперше побувала в космосі?" }],
+              "options": [],
+              "answer": [{ "id": "b16", "type": "text", "text": "1961 рік, Юрій Гагарін." }]
+            },
+            {
+              "id": "demo-r1-c2-500",
+              "content": [{ "id": "b17", "type": "text", "text": "Скільки кольорів у класичній веселці?" }],
+              "options": [],
+              "answer": [{ "id": "b18", "type": "text", "text": "Сім." }]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "demo-r2",
+      "name": "Раунд 2",
+      "prices": [200, 400, 600, 800, 1000],
+      "categories": [
+        {
+          "id": "demo-r2-c1",
+          "name": "Суміш",
+          "slots": [
+            {
+              "id": "demo-r2-c1-200",
+              "content": [{ "id": "b19", "type": "text", "text": "Яка найменша країна світу за площею?" }],
+              "options": [],
+              "answer": [{ "id": "b20", "type": "text", "text": "Ватикан." }]
+            },
+            {
+              "id": "demo-r2-c1-400",
+              "content": [{ "id": "b21", "type": "text", "text": "Скільки сторін у шестикутника?" }],
+              "options": [
+                { "id": "o5", "label": "A", "text": "5" },
+                { "id": "o6", "label": "B", "text": "6" },
+                { "id": "o7", "label": "C", "text": "7" },
+                { "id": "o8", "label": "D", "text": "8" }
+              ],
+              "correctOptionId": "o6",
+              "answer": [{ "id": "b22", "type": "text", "text": "Шість." }]
+            },
+            {
+              "id": "demo-r2-c1-600",
+              "content": [{ "id": "b23", "type": "text", "text": "Хто написав «Кобзар»?" }],
+              "options": [],
+              "answer": [{ "id": "b24", "type": "text", "text": "Тарас Шевченко." }]
+            },
+            {
+              "id": "demo-r2-c1-800",
+              "content": [{ "id": "b25", "type": "text", "text": "Яка хімічна формула води?" }],
+              "options": [],
+              "answer": [{ "id": "b26", "type": "text", "text": "H2O." }]
+            },
+            {
+              "id": "demo-r2-c1-1000",
+              "content": [
+                { "id": "b27", "type": "text", "text": "Фінальне питання раунду — приклад комбінованого блоку:" },
+                { "id": "b28", "type": "image", "file": "demo-image.png", "caption": "ілюстрація-заглушка" }
+              ],
+              "options": [],
+              "answer": [{ "id": "b29", "type": "text", "text": "Дякуємо за гру!" }]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

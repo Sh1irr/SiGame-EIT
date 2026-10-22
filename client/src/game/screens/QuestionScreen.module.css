@@ -1,0 +1,146 @@
+.screen {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: clamp(16px, 3vh, 28px);
+  padding: clamp(16px, 4vh, 40px);
+  color: var(--color-text);
+  font-family: var(--font-body);
+  text-align: center;
+  animation: reveal 350ms ease-out;
+}
+
+@keyframes reveal {
+  from {
+    opacity: 0;
+    transform: scale(0.94);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.mascot {
+  position: absolute;
+  bottom: clamp(8px, 1.5vh, 16px);
+  left: clamp(8px, 1.5vw, 16px);
+  width: clamp(70px, 9vw, 120px);
+  height: clamp(70px, 9vw, 120px);
+  object-fit: contain;
+  pointer-events: none;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.category {
+  color: var(--color-text-muted);
+  font-size: clamp(0.95rem, 1.8vw, 1.2rem);
+}
+
+.price {
+  font-family: var(--font-heading);
+  color: var(--color-accent);
+  font-size: clamp(2rem, 5vw, 3.2rem);
+}
+
+.team {
+  font-size: clamp(1rem, 2vw, 1.3rem);
+}
+
+.content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  width: min(900px, 92vw);
+}
+
+.blockGap {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  width: 100%;
+}
+
+.options {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 10px;
+  width: 100%;
+  max-width: 700px;
+}
+
+.option {
+  border: 1px solid var(--color-border);
+  border-radius: 10px;
+  padding: 10px 14px;
+  background: var(--color-bg-elevated);
+  text-align: left;
+  font-size: clamp(0.95rem, 1.8vw, 1.2rem);
+}
+
+.optionCorrect {
+  border-color: #3faa52;
+  background: color-mix(in srgb, #3faa52 18%, var(--color-bg-elevated));
+}
+
+.optionLabel {
+  font-weight: 700;
+  margin-right: 8px;
+  color: var(--color-accent);
+}
+
+.actions {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.correctButton,
+.wrongButton,
+.closeButton,
+.nextButton {
+  padding: 14px 24px;
+  border-radius: 12px;
+  border: none;
+  font-size: 1.05rem;
+  cursor: pointer;
+  font-family: var(--font-heading);
+}
+
+.correctButton {
+  background: #2e8b3f;
+  color: #fff;
+}
+
+.wrongButton {
+  background: #b23a2d;
+  color: #fff;
+}
+
+.closeButton {
+  background: var(--color-bg-elevated);
+  border: 1px solid var(--color-border);
+  color: var(--color-text);
+}
+
+.nextButton {
+  background: var(--color-accent);
+  color: var(--color-accent-contrast);
+}
+
+.resultNote {
+  font-size: clamp(1rem, 2vw, 1.3rem);
+}

@@ -1,0 +1,111 @@
+.toolbar {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.primaryButton {
+  padding: 10px 18px;
+  border-radius: 8px;
+  border: 1px solid var(--admin-accent);
+  background: var(--admin-accent);
+  color: var(--admin-accent-contrast);
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.secondaryButton {
+  padding: 10px 18px;
+  border-radius: 8px;
+  border: 1px solid var(--admin-border);
+  background: var(--admin-surface);
+  color: var(--admin-text);
+  cursor: pointer;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--admin-surface);
+  border: 1px solid var(--admin-border);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.table th {
+  text-align: left;
+  font-size: 0.85rem;
+  color: var(--admin-text-muted);
+  padding: 10px 14px;
+  border-bottom: 1px solid var(--admin-border);
+}
+
+.table td {
+  padding: 10px 14px;
+  border-bottom: 1px solid var(--admin-border);
+  vertical-align: middle;
+}
+
+.table tr:last-child td {
+  border-bottom: none;
+}
+
+.titleCell {
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.titleCell:hover {
+  text-decoration: underline;
+}
+
+.badge {
+  display: inline-block;
+  padding: 2px 10px;
+  border-radius: 999px;
+  font-size: 0.78rem;
+  font-weight: 600;
+}
+
+.badgeDraft {
+  background: #eee3c8;
+  color: #6b5200;
+}
+
+.badgeReady {
+  background: #d8f0d0;
+  color: #1f5c20;
+}
+
+.actions {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.actionButton {
+  padding: 6px 10px;
+  font-size: 0.82rem;
+  border-radius: 6px;
+  border: 1px solid var(--admin-border);
+  background: var(--admin-bg);
+  color: var(--admin-text);
+  cursor: pointer;
+}
+
+.danger {
+  border-color: var(--admin-danger);
+  color: var(--admin-danger);
+}
+
+.empty {
+  padding: 40px;
+  text-align: center;
+  color: var(--admin-text-muted);
+}
+
+.error {
+  color: var(--admin-danger);
+  margin-bottom: 12px;
+}
